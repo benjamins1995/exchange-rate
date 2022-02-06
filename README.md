@@ -1,8 +1,8 @@
 # Exchange Rate App
 
-very simple react app for converting money
+very simple react app for converting money.
 
-[Live Link](https://user-github-finder.vercel.app/)
+[Link YouTube explanation](https://youtu.be/RTliy149mjs)
 
 </br>
 
