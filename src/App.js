@@ -2,6 +2,8 @@ import './App.css';
 import * as React from 'react';
 import axios from 'axios';
 
+const API_TOKEN = process.env.REACT_APP_API_TOKEN;
+
 class App extends React.Component {
   state = {
     selectedSymbol: 'UNKNOWN',
@@ -49,7 +51,7 @@ class App extends React.Component {
   };
 
   hasAllRequiredData = () => {
-    return this.state.date && this.state.selectedSymbol != 'UNKNOWN';
+    return this.state.date && this.state.selectedSymbol !== 'UNKNOWN';
   };
 
   getExchangeRate = () => {
@@ -57,7 +59,7 @@ class App extends React.Component {
       axios
         .get('http://api.exchangeratesapi.io/v1/' + this.state.date, {
           params: {
-            access_key: d7cb5537965b82b60ec309edbf7e6629,
+            access_key: API_TOKEN,
             symbols: this.state.selectedSymbol,
             format: 1,
           },
