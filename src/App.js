@@ -2,7 +2,6 @@ import './App.css';
 import * as React from 'react';
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL;
 const API_TOKEN = process.env.REACT_APP_API_TOKEN;
 
 class App extends React.Component {
